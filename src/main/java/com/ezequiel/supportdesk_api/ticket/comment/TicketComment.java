@@ -1,7 +1,6 @@
 package com.ezequiel.supportdesk_api.ticket.comment;
 
 import com.ezequiel.supportdesk_api.ticket.Ticket;
-import com.ezequiel.supportdesk_api.ticket.TicketStatus;
 import com.ezequiel.supportdesk_api.user.User;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -22,7 +21,7 @@ public class TicketComment {
     private UUID id;
 
     @Column(nullable = false, length = 2000)
-    private String comment;
+    private String content;
 
     @ManyToOne(optional = false)
     @JoinColumn(name = "user_id")
