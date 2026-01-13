@@ -30,11 +30,11 @@ public class TicketHistory {
     private TicketStatus newStatus;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "id")
     private User changedBy;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "ticket_id")
+    @JoinColumn(name = "id")
     private Ticket ticket;
 
     @Column(nullable = false, updatable = false)
