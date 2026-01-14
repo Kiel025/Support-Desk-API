@@ -1,0 +1,22 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: supportdesk-postgres
+    restart: always
+    environment:
+      POSTGRES_DB: supportdesk
+      POSTGRES_USER: supportdesk
+      POSTGRES_PASSWORD: supportdesk
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - supportdesk-network
+
+volumes:
+  postgres_data:
+
+networks:
+  supportdesk-network:
+    driver: bridge
