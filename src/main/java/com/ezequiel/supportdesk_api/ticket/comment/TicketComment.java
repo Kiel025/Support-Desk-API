@@ -24,11 +24,11 @@ public class TicketComment {
     private String content;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "author_id")
     private User author;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "ticket_id")
     private Ticket ticket;
 
     @Column(nullable = false, updatable = false)

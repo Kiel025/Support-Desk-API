@@ -27,11 +27,11 @@ public class Ticket {
     private String description;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "responsible_id")
     private User responsible;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "customer_id")
     private User customer;
 
     @Enumerated(EnumType.STRING)
