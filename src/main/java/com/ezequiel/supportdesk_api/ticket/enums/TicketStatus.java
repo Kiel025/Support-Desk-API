@@ -1,4 +1,4 @@
-package com.ezequiel.supportdesk_api.ticket;
+package com.ezequiel.supportdesk_api.ticket.enums;
 
 public enum TicketStatus {
 

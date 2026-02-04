@@ -1,7 +1,7 @@
 package com.ezequiel.supportdesk_api.ticket.history;
 
 import com.ezequiel.supportdesk_api.ticket.Ticket;
-import com.ezequiel.supportdesk_api.ticket.TicketStatus;
+import com.ezequiel.supportdesk_api.ticket.enums.TicketStatus;
 import com.ezequiel.supportdesk_api.user.User;
 import jakarta.persistence.*;
 import lombok.Getter;
