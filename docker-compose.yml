@@ -14,6 +14,16 @@ services:
     networks:
       - supportdesk-network
 
+  app:
+    build: .
+    container_name: supportdesk-api
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    networks:
+      - supportdesk-network
+
 volumes:
   postgres_data:
 

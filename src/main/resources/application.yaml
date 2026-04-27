@@ -7,6 +7,6 @@ spring:
   flyway:
     enabled: true
   datasource:
-    url: jdbc:postgresql://localhost:5433/supportdesk
+    url: jdbc:postgresql://postgres:5432/supportdesk
     username: supportdesk
     password: supportdesk
